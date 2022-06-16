@@ -14,7 +14,7 @@ namespace SeleniumCSharpTutorials.BaseClass
         public IWebDriver driver;
         
 
-        [OneTimeSetUp]
+        [SetUp]
         public void Open()
         {
             driver = new ChromeDriver();
@@ -22,7 +22,7 @@ namespace SeleniumCSharpTutorials.BaseClass
             driver.Url = "https://pl-pl.facebook.com/";
         }
 
-        [OneTimeTearDown]
+        [TearDown]
         public void Close()
         {
             driver.Quit();
