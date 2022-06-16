@@ -30,6 +30,7 @@ namespace SeleniumCSharpTutorials
             IWebElement emailTextField = driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Celenium C#");
             Thread.Sleep(5000);
+
         }
 
     }
